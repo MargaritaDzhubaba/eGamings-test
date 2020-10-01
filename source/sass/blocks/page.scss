@@ -1,0 +1,20 @@
+.page {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  min-width: $mobile-width;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  font-family: $default-font;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  color: $text-color;
+
+  background: linear-gradient(289.68deg, #121726 57.75%, #222c42 90.78%);
+}

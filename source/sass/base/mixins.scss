@@ -1,0 +1,29 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin wrapper {
+  margin: 0 auto;
+  max-width: 1614px;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

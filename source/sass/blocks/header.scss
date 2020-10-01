@@ -1,0 +1,7 @@
+.header {
+  background-color: $dark-bg-color;
+}
+
+.header__wrapper {
+  @include wrapper;
+}
