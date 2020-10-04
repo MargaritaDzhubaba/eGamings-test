@@ -1,0 +1,108 @@
+.games {
+  @include wrapper;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 42px;
+  padding-bottom: 45px;
+}
+
+.games__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 29px;
+}
+
+.games__list {
+  @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  width: 67%;
+}
+
+.games__item {
+  position: relative;
+
+  img {
+    display: block;
+
+    width: 219px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+
+    .games__button {
+      display: block;
+    }
+  }
+}
+
+.games__button {
+  position: absolute;
+
+  display: none;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 12px 30px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+
+  color: $black-color;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px transparentize($black-color, 0.55);
+  border: none;
+  border-radius: 100px;
+}
+
+.games__item--big {
+  width: 32.5%;
+
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 20px;
+
+  img {
+    width: 100%;
+  }
+
+  .games__button {
+    display: block;
+  }
+}
+
+.games--new {
+  .games__item--big {
+    box-shadow: 0 0 14px $new-games-color;
+    border-color: $new-games-color;
+  }
+}
+
+.games--popular {
+  .games__item--big {
+    box-shadow: 0 0 14px $recommends-games-color;
+    border-color: $popular-games-color;
+  }
+}
+
+.games--recommends {
+  .games__item--big {
+    box-shadow: 0 0 14px $recommends-games-color;
+    border-color: $recommends-games-color;
+  }
+}

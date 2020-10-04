@@ -1,0 +1,153 @@
+.form-register {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+
+  font-family: $default-font;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: -30px;
+    right: -110px;
+
+    width: 218px;
+    height: 210px;
+
+    background: transparent url("../img/cristals-01.png") no-repeat 0 0;
+  }
+
+  input,
+  select {
+    margin-bottom: 13px;
+
+    &:hover,
+    &:focus {
+      @include transition;
+
+      border: 1px solid $accent-color;
+    }
+
+    &::placeholder {
+      color: $text-secondary-color;
+      opacity: 1;
+    }
+  }
+}
+
+input,
+select {
+  width: 100%;
+  min-height: 30px;
+  // margin-bottom: 13px;
+
+  padding: 9px 14px 6px;
+  font-family: $default-font;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: $text-secondary-color;
+  background-color: transparent;
+
+  border: 1px solid #32448C;
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 17px;
+}
+
+.form-register__label {
+  position: relative;
+  width: 100%;
+
+  &--password {
+    margin-right: auto;
+    width: 71%;
+
+    .form-register__password-control {
+      position: absolute;
+      right: 10px;
+      top: 6px;
+
+      color: $text-secondary-color;
+
+      &:hover,
+      &:focus {
+        @include transition;
+        color: $text-color;
+      }
+    }
+  }
+
+  &--promocode {
+    margin-right: auto;
+    width: 49%;
+
+    .form-register__promo-code-control {
+      position: absolute;
+      right: 11px;
+      top: 9px;
+
+      font-family: $default-font;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+
+      color: $text-secondary-color;
+
+      &:hover,
+      &:focus {
+        @include transition;
+        color: $text-color;
+      }
+    }
+  }
+}
+
+.form-register__select {
+  width: 26%;
+  padding: 8px 6px 7px;
+  border-radius: 7px;
+}
+
+.form-register__checkbox {
+  margin-bottom: 27px;
+}
+
+.form-register__button {
+  width: 124px;
+  padding: 7px 24px;
+  margin-bottom: 7px;
+
+  font-family: $default-font;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: $dark-bg-color;
+  background-color: $accent-color;
+  border-color: $accent-color;
+}
+
+.form-register__link {
+  width: 100%;
+
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration: underline;
+  text-align: center;
+
+  color: #a2a5c1;
+
+  &:hover,
+  &:focus {
+    @include transition;
+
+    opacity: 0.5;
+  }
+}

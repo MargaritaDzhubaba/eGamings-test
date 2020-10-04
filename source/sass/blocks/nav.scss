@@ -1,0 +1,42 @@
+.nav {
+  margin-left: 13px;
+  max-width: 33%;
+}
+
+.nav__list {
+  @include reset-list;
+
+  display: flex
+}
+
+.nav__item {
+  margin-right: 25px;
+
+  font-family: $default-font;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  a {
+    color: $text-color;
+
+    &[href]:hover,
+    &[href]:focus {
+      @include transition;
+
+      opacity: 0.5;
+    }
+
+    &[href]:active {
+      @include transition;
+
+      opacity: 0.7;
+    }
+  }
+}
+
+

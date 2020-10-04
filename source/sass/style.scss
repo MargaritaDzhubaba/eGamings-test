@@ -5,6 +5,28 @@
 @import "base/variables.scss";
 @import "base/visually-hidden.scss";
 
+//vendor
+@import "vendor/functions.scss";
+@import "vendor/swiper.scss";
+@import "vendor/core.scss";
+@import "vendor/navigation.scss";
+
 // blocks
 @import "blocks/page.scss";
+@import "blocks/button.scss";
+@import "blocks/title.scss";
 @import "blocks/header.scss";
+@import "blocks/form-search.scss";
+@import "blocks/nav.scss";
+@import "blocks/user-nav.scss";
+@import "blocks/promo.scss";
+@import "blocks/sing-up.scss";
+@import "blocks/bonuses.scss";
+@import "blocks/form-register.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/swiper.scss";
+@import "blocks/select-game.scss";
+@import "blocks/category.scss";
+@import "blocks/providers.scss";
+@import "blocks/view-all.scss";
+@import "blocks/games.scss";

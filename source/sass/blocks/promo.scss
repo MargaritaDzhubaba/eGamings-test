@@ -1,0 +1,24 @@
+.promo {
+  @include wrapper;
+
+  position: relative;
+  z-index: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -83px;
+    left: -83px;
+
+    width: 204px;
+    height: 198px;
+
+    background: transparent url("../img/cristals.png") no-repeat 0 0;
+  }
+}

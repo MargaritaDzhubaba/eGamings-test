@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCcategory html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,12 +8,16 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
+  <div style="display: none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+
   <header class="header">
     <div class="header__wrapper">
       <h1 class="visually-hidden">Главная страница "Casino test"</h1>
-      <form class="header__form form" action="#" method="GET">
-        <input class="form__search" type="search" area-label="Поиск по сайту">
-        <button class="form__button" area-label="Поиск"></button>
+      <form class="header__form form-search" action="#" method="GET">
+        <input class="form-search__input" category="search" placeholder="thor's lightning" area-label="Поиск по сайту">
+        <button class="form-search__button" area-label="Поиск"></button>
       </form>
       <nav class="header__nav nav">
         <ul class="nav__list">
@@ -29,14 +33,416 @@
         </ul>
       </nav>
       <span class="header__logo logo">
-        <img src="img/logo.svg" width="89" height="20" alt="Логотип Supergym">
+        <img src="img/logo.svg" width="169" height="40" alt="eGamings">
       </span>
 
       <div class="header__user-nav user-nav">
-        <a href="#">Deposit</a>
-        <a class="user-nav__login" href="#">Log In</a>
+        <a class="user-nav__button user-nav__button--deposit button" href="#">
+          <span>Deposit</span>
+        </a>
+        <a class="user-nav__button user-nav__button--login button" href="#">
+          <span>Log In</span>
+        </a>
       </div>
     </div>
   </header>
+
+  <main>
+    <div class="promo">
+      <section class="sing-up">
+        <h2 class="title">Sign up and start winning</h2>
+        <dl class="sing-up__social-list">
+          <dt class="sing-up__social-title">With your social network</dt>
+          <dd class="sing-up__social-description">
+            <a class="sing-up__social-link" href aria-label="Мейлру">
+              <svg class="sing-up__social-icon" aria-hidden="true" width="33" height="33">
+                <use xlink:href="#sprite-icon-mail"></use>
+              </svg>
+            </a>
+            <a class="sing-up__social-link" href aria-label="Одноклассники">
+              <svg class="sing-up__social-icon" aria-hidden="true" width="34" height="33">
+                <use xlink:href="#sprite-icon-ok"></use>
+              </svg>
+            </a>
+            <a class="sing-up__social-link" href aria-label="Фейсбук">
+              <svg class="sing-up__social-icon" aria-hidden="true" width="33" height="33">
+                <use xlink:href="#sprite-icon-fb"></use>
+              </svg>
+            </a>
+            <a class="sing-up__social-link" href aria-label="ВКонтакте">
+              <svg class="sing-up__social-icon" aria-hidden="true" width="35" height="34">
+                <use xlink:href="#sprite-icon-vk"></use>
+              </svg>
+            </a>
+            <a class="sing-up__social-link" href aria-label="Гугл Плюс">
+              <svg class="sing-up__social-icon" aria-hidden="true" width="33" height="33">
+                <use xlink:href="#sprite-icon-google-plus"></use>
+              </svg>
+            </a>
+          </dd>
+        </dl>
+        <span>or</span>
+        <form class="sing-up__form form-register" action="#" method="POST">
+          <label class="form-register__label form-register__label--email">
+            <input category="email" name="email-field" placeholder="E-mail *" required>
+          </label>
+
+          <label class="form-register__label form-register__label--password">
+            <input category="password" name="password-field" placeholder="Password *" required>
+            <a class="form-register__password-control" href="#" area-label="show password">
+              <svg class="form-register__password-control-icon" aria-hidden="true" width="18" height="19">
+                <use xlink:href="#sprite-icon-eye"></use>
+              </svg>
+            </a>
+          </label>
+
+          <select class="form-register__select" name="select-field" required>
+            <option value="Currency" selected>Currency *</option>
+            <option value="Euro">Euro</option>
+            <option value="Dollars">Dollars</option>
+            <option value="Rubles">Rubles</option>
+          </select>
+
+          <label class="form-register__label form-register__label--promocode">
+            <input category="text" name="promo-code-field" placeholder="Promo-code">
+            <a class="form-register__promo-code-control" href="#">?</a>
+          </label>
+
+          <div class="form-register__checkbox checkbox">
+            <input class="checkbox__input visually-hidden" category="checkbox" id="confidence" name="confidence-field" aria-label="I agree with Teame and Confidence" required>
+            <label class="checkbox__label" for="confidence">I agree with <a>Teame and Confidence</a></label>
+            <input class="checkbox__input visually-hidden" category="checkbox" id="comfirm-age" name="comfirm-field" aria-label="I comfirm that I’m 18 years or older" required>
+            <label class="checkbox__label" for="comfirm-age">I comfirm that I’m 18 years or older</label>
+          </div>
+
+          <button class="form-register__button button" category="submit">Register</button>
+          <a class="form-register__link">Have an account?</a>
+        </form>
+      </section>
+      <section class="bonuses">
+        <!-- Slider main container -->
+        <div class="swiper-container bonuses-slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="bonuses__item">
+                  <div class="bonuses__img">
+                    <picture>
+                      <!-- 1х: 1046; 2x: 2092 -->
+                      <img src="img/bonuses/bonuses-swiper-img-1.jpg" srcset="img/bonuses-swiper-img-1@2x.jpg 2x" width="1046" height="492" alt="First bonus">
+                    </picture>
+                  </div>
+                  <div class="bonuses__info">
+                    <p class="bonuses__number">FIRST bonuses</p>
+                    <h3>Welcome BonusPackage</h3>
+                    <p class="bonuses__description">200 bonus and 100 free spins</p>
+                    <a class="bonuses__button button" href="#">Deposit</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bonuses__item">
+                  <div class="bonuses__img">
+                    <picture>
+                      <!-- 1х: 1046; 2x: 2092 -->
+                      <img src="img/bonuses/bonuses-swiper-img-2.jpg" srcset="img/bonuses-swiper-img-2@2x.jpg 2x" width="1046" height="492" alt="First bonus">
+                    </picture>
+                  </div>
+                  <div class="bonuses__info">
+                    <p class="bonuses__number">FIRST bonuses</p>
+                    <h3>Welcome BonusPackage</h3>
+                    <p class="bonuses__description">200 bonus and 100 free spins</p>
+                    <a class="bonuses__button button" href="#">Deposit</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bonuses__item">
+                  <div class="bonuses__img">
+                    <picture>
+                      <!-- 1х: 1046; 2x: 2092 -->
+                      <img src="img/bonuses/bonuses-swiper-img-3.jpg" srcset="img/bonuses-swiper-img-3@2x.jpg 2x" width="1046" height="492" alt="First bonus">
+                    </picture>
+                  </div>
+                  <div class="bonuses__info">
+                    <p class="bonuses__number">FIRST bonuses</p>
+                    <h3>Welcome BonusPackage</h3>
+                    <p class="bonuses__description">200 bonus and 100 free spins</p>
+                    <a class="bonuses__button button" href="#">Deposit</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bonuses__item">
+                  <div class="bonuses__img">
+                    <picture>
+                      <!-- 1х: 1046; 2x: 2092 -->
+                      <img src="img/bonuses/bonuses-swiper-img-4.jpg" srcset="img/bonuses-swiper-img-4@2x.jpg 2x" width="1046" height="492" alt="First bonus">
+                    </picture>
+                  </div>
+                  <div class="bonuses__info">
+                    <p class="bonuses__number">FIRST bonuses</p>
+                    <h3>Welcome BonusPackage</h3>
+                    <p class="bonuses__description">200 bonus and 100 free spins</p>
+                    <a class="bonuses__button button" href="#">Deposit</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination bonuses__pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <button class="swiper-button-prev bonuses__button-prev" category="button"></button>
+          <button class="swiper-button-next bonuses__button-next" category="button"></button>
+        </div>
+      </section>
+    </div>
+
+    <section class="select-game">
+      <div class="select-game__category category">
+        <ul class="category__list">
+          <li class="category__item">
+            <a class="category__link category__link--new-games" href="#">New games</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link category__link--popular" href="#">Popular</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link category__link--slots" href="#">Slots</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link category__link--casino-live" href="#">Casino Live</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link category__link--table-games" href="#">Table Games</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link category__link--favorites" href="#">Favorites</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link category__link--last-played" href="#">Last played</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link category__link--all-category" href="#">All category</a>
+          </li>
+        </ul>
+        <form class="category__form form-search form-search--category" action="#" method="GET">
+          <input class="form-search__input" category="search" placeholder="thor's lightning" area-label="Поиск по сайту">
+          <button class="form-search__button" area-label="Поиск"></button>
+        </form>
+      </div>
+      <div class="select-game__providers providers">
+        <ul class="providers__list">
+          <li class="providers__item">
+            <a href="" class="providers__link providers__link--active button" href="#">All Providers</a>
+          </li>
+          <li class="providers__item">
+            <a href="" class="providers__link button" href="#">NetEnt</a>
+          </li>
+          <li class="providers__item">
+            <a href="" class="providers__link button" href="#">Microgaming</a>
+          </li>
+          <li class="providers__item">
+            <a href="" class="providers__link button" href="#">Quickspin</a>
+          </li>
+          <li class="providers__item">
+            <a href="" class="providers__link button" href="#">PragmaticPlay</a>
+          </li>
+          <li class="providers__item">
+            <a href="" class="providers__link button" href="#">BoomingGames</a>
+          </li>
+          <li class="providers__item">
+            <a href="" class="providers__link button" href="#">MrSlotty</a>
+          </li>
+          <li class="providers__item">
+            <a href="" class="providers__link button" href="#">BoomingGames</a>
+          </li>
+          <li class="providers__item">
+            <a href="" class="providers__link button" href="#">BetRadar</a>
+          </li>
+          <li class="providers__item">
+            <a href="" class="providers__link button" href="#">PariPlay</a>
+          </li>
+          <li class="providers__item">
+            <a href="" class="providers__link button" href="#">BetConstruct</a>
+          </li>
+          <li class="providers__item">
+            <a href="" class="providers__link button" href="#">NetEnt</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="games games--new">
+      <h2 class="title">New games</h2>
+      <a class="view-all" href="#">View all (46)</a>
+      <div class="games__wrapper">
+        <ul class="games__list">
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-cash-vandal.jpg" alt="cash-vandal">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+          </li>
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-monstermad.jpg" alt="monster madness">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in monster madness">Play now</button>
+          </li>
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-junglespirit.jpg" alt="jungle spirit">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in jungle spirit">Play now</button>
+          </li>
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-fairyhansel.jpg" alt="fairy hansel">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in fairy hansel">Play now</button>
+          </li>
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-playboy.jpg" alt="playboy">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in playboy">Play now</button>
+          </li>
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-warlords.jpg" alt="warlords">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in warlords">Play now</button>
+          </li>
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-fairyred.jpg" alt="fairy red">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in fairy red">Play now</button>
+          </li>
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-copycats.jpg" alt="copy cats">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in copy cats">Play now</button>
+          </li>
+        </ul>
+        <div class="games__item games__item--big">
+          <a href="#">
+            <img src="img/games/game-zombie-horde.jpg" alt="zombie hoard">
+          </a>
+          <button class="games__button button" type="button" aria-label="play in zombie hoard">Play now</button>
+        </div>
+      </div>
+      <!-- <div class="games__wrapper">
+        <div class="games__list">
+          <a class="games__item" href="#">
+            <img src="img/game-cash-vandal.jpg" alt="cash vandal">
+            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+          </a>
+          <a class="games__item" href="#">
+            <img src="img/game-monstermad.jpg" alt="monster madness">
+            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+          </a>
+          <a class="games__item" href="#">
+            <img src="img/game-junglespirit.jpg" alt="jungle spirit">
+            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+          </a>
+          <a class="games__item" href="#">
+            <img src="img/game-fairyhansel.jpg" alt="fairy hansel">
+            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+          </a>
+          <a class="games__item" href="#">
+            <img src="img/game-playboy.jpg" alt="playboy">
+            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+          </a>
+          <a class="games__item" href="#">
+            <img src="img/game-warlords.jpg" alt="warlords">
+            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+          </a>
+          <a class="games__item" href="#">
+            <img src="img/game-fairyred.jpg" alt="fairy red">
+            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+          </a>
+          <a class="games__item" href="#">
+            <img src="img/game-copycats.jpg" alt="copy cats">
+            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+          </a>
+        </div>
+        <a class="games__item games__item--big" href="#">
+          <img src="img/game-zombie-horde.jpg" alt="zombie hoard">
+        </a>
+      </div> -->
+    </section>
+    <section class="winning-now"></section>
+
+    <section class="games games--popular">
+      <h2 class="title">Popular</h2>
+      <a class="view-all" href="#">View all (46)</a>
+      <div class="games__wrapper">
+        <ul class="games__list">
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-cash-vandal.jpg" alt="cash-vandal">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+          </li>
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-cash-vandal.jpg" alt="cash-vandal">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+          </li>
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-cash-vandal.jpg" alt="cash-vandal">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+          </li>
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-cash-vandal.jpg" alt="cash-vandal">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+          </li>
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-cash-vandal.jpg" alt="cash-vandal">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+          </li>
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-cash-vandal.jpg" alt="cash-vandal">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+          </li>
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-cash-vandal.jpg" alt="cash-vandal">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+          </li>
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-cash-vandal.jpg" alt="cash-vandal">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+          </li>
+        </ul>
+        <div class="games__item games__item--big">
+          <a href="#">
+            <img src="img/games/game-zombie-horde.jpg" alt="zombie hoard">
+          </a>
+          <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/vendor/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

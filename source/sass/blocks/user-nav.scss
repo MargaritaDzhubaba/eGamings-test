@@ -1,0 +1,51 @@
+.header__user-nav {
+  max-width: 33%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-nav__button {
+  margin-left: 15px;
+  padding: 8px 29px;
+
+  font-family: $default-font;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 17px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &--deposit {
+    color: $black-color;
+    background-color: $accent-color;
+    border-color: $accent-color;
+  }
+
+  &--login {
+    padding-left: 53px;
+
+    span {
+      position: relative;
+    }
+
+    span::before {
+      content: "";
+
+      position: absolute;
+      top: 3px;
+      left: -20px;
+
+      width: 11px;
+      height: 13px;
+      background-image: url("../img/icons/icon-user.svg");
+    }
+  }
+}

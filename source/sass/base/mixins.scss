@@ -5,9 +5,13 @@
   list-style: none;
 }
 
+@mixin transition {
+  transition: all ease 0.2s;
+}
+
 @mixin wrapper {
   margin: 0 auto;
-  max-width: 1614px;
+  max-width: 1520px;
 
   @media (max-width: $mobile-width) {
     width: 100%;

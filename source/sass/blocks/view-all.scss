@@ -1,0 +1,28 @@
+.view-all {
+  position: relative;
+  padding-right: 22px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #87E389;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 4px;
+    right: 0;
+
+    width: 8px;
+    height: 13px;
+
+    background: url("../img/icons/icon-arrow-right-green.svg") no-repeat center center;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
