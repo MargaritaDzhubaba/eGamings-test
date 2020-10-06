@@ -1,0 +1,71 @@
+.indicators {
+  position: relative;
+  top: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 399px;
+  width: 24%;
+  padding: 45px;
+
+  background: $light-bg-color;
+  box-shadow: inset 0 0 24px transparentize($black-color, 0.65);
+}
+
+.indicators__item {
+  position: relative;
+
+  padding: 20px;
+  padding-left: 100px;
+  border-bottom: 1px solid #282F4B;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &--players::before {
+    width: 75px;
+    height: 76px;
+
+    background-image: url("../../img/icons/icon-cards.svg");
+  }
+
+  &--providers::before {
+    width: 71px;
+    height: 72px;
+
+    background-image: url("../../img/icons/icon-flag.svg");
+  }
+
+  &--games::before {
+    width: 77px;
+    height: 78px;
+
+    background-image: url("../../img/icons/icon-dices.svg");
+  }
+}
+
+.indicators__number {
+  font-size: 46px;
+  line-height: 46px;
+  font-weight: bold;
+
+  color: $accent-color;
+}
+
+.indicators__description {
+  margin: 0;
+}

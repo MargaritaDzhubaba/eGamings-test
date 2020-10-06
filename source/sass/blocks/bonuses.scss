@@ -1,13 +1,13 @@
 .bonuses {
   display: flex;
   width: 65%;
+  height: 492px;
 }
 
 .bonuses__item {
   position: relative;
 
   width: 1046px;
-  min-height: 492px;
   height: 100%;
 
   margin-left: auto;
@@ -23,6 +23,11 @@
   bottom: 0;
   left: 0;
   z-index: -1;
+
+  img {
+    display: block;
+    object-fit: cover;
+  }
 }
 
 .bonuses__info {
@@ -86,7 +91,7 @@
   font-size: 14px;
   line-height: 15px;
 
-  color: #000000;
+  color: $black-color;
   background-color: $accent-color;
   border-color: $accent-color;
 }

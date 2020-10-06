@@ -1,7 +1,7 @@
+/* eslint-disable new-cap, no-undef, no-undef, no-unused-vars */
 'use strict';
-var slider = document.querySelector('.bonuses-slider');
-
-var sliderBonuses = new Swiper(slider, {
+// Слайдер bonuses
+var sliderBonuses = new Swiper('.bonuses-slider', {
   navigation: {
     nextEl: '.bonuses__button-prev',
     prevEl: '.bonuses__button-next'
@@ -12,4 +12,11 @@ var sliderBonuses = new Swiper(slider, {
     type: 'bullets',
     clickable: true,
   },
+});
+
+// Слайдер winners
+var sliderWinners = new Swiper('.winners-slider', {
+  slidesPerView: 7,
+  slidesPerGroup: 1,
+  spaceBetween: 25,
 });

@@ -1,4 +1,4 @@
-<!DOCcategory html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -14,10 +14,10 @@
 
   <header class="header">
     <div class="header__wrapper">
-      <h1 class="visually-hidden">Главная страница "Casino test"</h1>
+      <h1 class="visually-hidden">Main page "Casino test"</h1>
       <form class="header__form form-search" action="#" method="GET">
-        <input class="form-search__input" category="search" placeholder="thor's lightning" area-label="Поиск по сайту">
-        <button class="form-search__button" area-label="Поиск"></button>
+        <input class="form-search__input" type="search" placeholder="thor's lightning">
+        <button class="form-search__button" type="button" aria-label="site search"></button>
       </form>
       <nav class="header__nav nav">
         <ul class="nav__list">
@@ -54,27 +54,27 @@
         <dl class="sing-up__social-list">
           <dt class="sing-up__social-title">With your social network</dt>
           <dd class="sing-up__social-description">
-            <a class="sing-up__social-link" href aria-label="Мейлру">
+            <a class="sing-up__social-link" href="#" aria-label="Мейлру">
               <svg class="sing-up__social-icon" aria-hidden="true" width="33" height="33">
                 <use xlink:href="#sprite-icon-mail"></use>
               </svg>
             </a>
-            <a class="sing-up__social-link" href aria-label="Одноклассники">
+            <a class="sing-up__social-link" href="#" aria-label="Одноклассники">
               <svg class="sing-up__social-icon" aria-hidden="true" width="34" height="33">
                 <use xlink:href="#sprite-icon-ok"></use>
               </svg>
             </a>
-            <a class="sing-up__social-link" href aria-label="Фейсбук">
+            <a class="sing-up__social-link" href="#" aria-label="Фейсбук">
               <svg class="sing-up__social-icon" aria-hidden="true" width="33" height="33">
                 <use xlink:href="#sprite-icon-fb"></use>
               </svg>
             </a>
-            <a class="sing-up__social-link" href aria-label="ВКонтакте">
+            <a class="sing-up__social-link" href="#" aria-label="ВКонтакте">
               <svg class="sing-up__social-icon" aria-hidden="true" width="35" height="34">
                 <use xlink:href="#sprite-icon-vk"></use>
               </svg>
             </a>
-            <a class="sing-up__social-link" href aria-label="Гугл Плюс">
+            <a class="sing-up__social-link" href="#" aria-label="Гугл Плюс">
               <svg class="sing-up__social-icon" aria-hidden="true" width="33" height="33">
                 <use xlink:href="#sprite-icon-google-plus"></use>
               </svg>
@@ -84,39 +84,39 @@
         <span>or</span>
         <form class="sing-up__form form-register" action="#" method="POST">
           <label class="form-register__label form-register__label--email">
-            <input category="email" name="email-field" placeholder="E-mail *" required>
+            <input type="email" name="email-field" placeholder="E-mail *" required>
           </label>
 
           <label class="form-register__label form-register__label--password">
-            <input category="password" name="password-field" placeholder="Password *" required>
-            <a class="form-register__password-control" href="#" area-label="show password">
+            <input type="password" name="password-field" placeholder="Password *" required>
+            <a class="form-register__password-control" href="#">
               <svg class="form-register__password-control-icon" aria-hidden="true" width="18" height="19">
                 <use xlink:href="#sprite-icon-eye"></use>
               </svg>
             </a>
           </label>
 
-          <select class="form-register__select" name="select-field" required>
-            <option value="Currency" selected>Currency *</option>
+          <select class="form-register__select" size="1" name="select-field" required>
+            <option value="Currency">Currency *</option>
             <option value="Euro">Euro</option>
             <option value="Dollars">Dollars</option>
             <option value="Rubles">Rubles</option>
           </select>
 
           <label class="form-register__label form-register__label--promocode">
-            <input category="text" name="promo-code-field" placeholder="Promo-code">
+            <input type="text" name="promo-code-field" placeholder="Promo-code">
             <a class="form-register__promo-code-control" href="#">?</a>
           </label>
 
           <div class="form-register__checkbox checkbox">
-            <input class="checkbox__input visually-hidden" category="checkbox" id="confidence" name="confidence-field" aria-label="I agree with Teame and Confidence" required>
+            <input class="checkbox__input visually-hidden" type="checkbox" id="confidence" name="confidence-field" aria-label="I agree with Teame and Confidence" required>
             <label class="checkbox__label" for="confidence">I agree with <a>Teame and Confidence</a></label>
-            <input class="checkbox__input visually-hidden" category="checkbox" id="comfirm-age" name="comfirm-field" aria-label="I comfirm that I’m 18 years or older" required>
+            <input class="checkbox__input visually-hidden" type="checkbox" id="comfirm-age" name="comfirm-field" aria-label="I comfirm that I’m 18 years or older" required>
             <label class="checkbox__label" for="comfirm-age">I comfirm that I’m 18 years or older</label>
           </div>
 
-          <button class="form-register__button button" category="submit">Register</button>
-          <a class="form-register__link">Have an account?</a>
+          <button class="form-register__button button" type="submit">Register</button>
+          <a class="form-register__link" href="#">Have an account?</a>
         </form>
       </section>
       <section class="bonuses">
@@ -129,8 +129,9 @@
                 <div class="bonuses__item">
                   <div class="bonuses__img">
                     <picture>
+                      <source srcset="img/bonuses/bonuses-swiper-img-1.webp 1x, img/bonuses/bonuses-swiper-img-1@2x.webp 2x" type="image/webp">
                       <!-- 1х: 1046; 2x: 2092 -->
-                      <img src="img/bonuses/bonuses-swiper-img-1.jpg" srcset="img/bonuses-swiper-img-1@2x.jpg 2x" width="1046" height="492" alt="First bonus">
+                      <img src="img/bonuses/bonuses-swiper-img-1.jpg" srcset="img/bonuses/bonuses-swiper-img-1@2x.jpg 2x" width="1046" height="492" alt="First bonus">
                     </picture>
                   </div>
                   <div class="bonuses__info">
@@ -145,8 +146,9 @@
                 <div class="bonuses__item">
                   <div class="bonuses__img">
                     <picture>
+                      <source srcset="img/bonuses/bonuses-swiper-img-2.webp 1x, img/bonuses/bonuses-swiper-img-2@2x.webp 2x" type="image/webp">
                       <!-- 1х: 1046; 2x: 2092 -->
-                      <img src="img/bonuses/bonuses-swiper-img-2.jpg" srcset="img/bonuses-swiper-img-2@2x.jpg 2x" width="1046" height="492" alt="First bonus">
+                      <img src="img/bonuses/bonuses-swiper-img-2.jpg" srcset="img/bonuses/bonuses-swiper-img-2@2x.jpg 2x" width="1046" height="492" alt="First bonus">
                     </picture>
                   </div>
                   <div class="bonuses__info">
@@ -161,8 +163,9 @@
                 <div class="bonuses__item">
                   <div class="bonuses__img">
                     <picture>
+                      <source srcset="img/bonuses/bonuses-swiper-img-3.webp 1x, img/bonuses/bonuses-swiper-img-3@2x.webp 2x" type="image/webp">
                       <!-- 1х: 1046; 2x: 2092 -->
-                      <img src="img/bonuses/bonuses-swiper-img-3.jpg" srcset="img/bonuses-swiper-img-3@2x.jpg 2x" width="1046" height="492" alt="First bonus">
+                      <img src="img/bonuses/bonuses-swiper-img-3.jpg" srcset="img/bonuses/bonuses-swiper-img-3@2x.jpg 2x" width="1046" height="492" alt="First bonus">
                     </picture>
                   </div>
                   <div class="bonuses__info">
@@ -177,8 +180,9 @@
                 <div class="bonuses__item">
                   <div class="bonuses__img">
                     <picture>
+                      <source srcset="img/bonuses/bonuses-swiper-img-4.webp 1x, img/bonuses/bonuses-swiper-img-4@2x.webp 2x" type="image/webp">
                       <!-- 1х: 1046; 2x: 2092 -->
-                      <img src="img/bonuses/bonuses-swiper-img-4.jpg" srcset="img/bonuses-swiper-img-4@2x.jpg 2x" width="1046" height="492" alt="First bonus">
+                      <img src="img/bonuses/bonuses-swiper-img-4.jpg" srcset="img/bonuses/bonuses-swiper-img-4@2x.jpg 2x" width="1046" height="492" alt="First bonus">
                     </picture>
                   </div>
                   <div class="bonuses__info">
@@ -194,13 +198,14 @@
           <div class="swiper-pagination bonuses__pagination"></div>
 
           <!-- If we need navigation buttons -->
-          <button class="swiper-button-prev bonuses__button-prev" category="button"></button>
-          <button class="swiper-button-next bonuses__button-next" category="button"></button>
+          <button class="swiper-button-prev bonuses__button-prev" type="button"></button>
+          <button class="swiper-button-next bonuses__button-next" type="button"></button>
         </div>
       </section>
     </div>
 
     <section class="select-game">
+      <h2 class="visually-hidden">Game categories</h2>
       <div class="select-game__category category">
         <ul class="category__list">
           <li class="category__item">
@@ -229,47 +234,47 @@
           </li>
         </ul>
         <form class="category__form form-search form-search--category" action="#" method="GET">
-          <input class="form-search__input" category="search" placeholder="thor's lightning" area-label="Поиск по сайту">
-          <button class="form-search__button" area-label="Поиск"></button>
+          <input class="form-search__input" type="search" placeholder="thor's lightning">
+          <button class="form-search__button" type="button" aria-label="site search"></button>
         </form>
       </div>
       <div class="select-game__providers providers">
         <ul class="providers__list">
           <li class="providers__item">
-            <a href="" class="providers__link providers__link--active button" href="#">All Providers</a>
+            <a class="providers__link providers__link--active button" href="#">All Providers</a>
           </li>
           <li class="providers__item">
-            <a href="" class="providers__link button" href="#">NetEnt</a>
+            <a class="providers__link button" href="#">NetEnt</a>
           </li>
           <li class="providers__item">
-            <a href="" class="providers__link button" href="#">Microgaming</a>
+            <a class="providers__link button" href="#">Microgaming</a>
           </li>
           <li class="providers__item">
-            <a href="" class="providers__link button" href="#">Quickspin</a>
+            <a class="providers__link button" href="#">Quickspin</a>
           </li>
           <li class="providers__item">
-            <a href="" class="providers__link button" href="#">PragmaticPlay</a>
+            <a class="providers__link button" href="#">PragmaticPlay</a>
           </li>
           <li class="providers__item">
-            <a href="" class="providers__link button" href="#">BoomingGames</a>
+            <a class="providers__link button" href="#">BoomingGames</a>
           </li>
           <li class="providers__item">
-            <a href="" class="providers__link button" href="#">MrSlotty</a>
+            <a class="providers__link button" href="#">MrSlotty</a>
           </li>
           <li class="providers__item">
-            <a href="" class="providers__link button" href="#">BoomingGames</a>
+            <a class="providers__link button" href="#">BoomingGames</a>
           </li>
           <li class="providers__item">
-            <a href="" class="providers__link button" href="#">BetRadar</a>
+            <a class="providers__link button" href="#">BetRadar</a>
           </li>
           <li class="providers__item">
-            <a href="" class="providers__link button" href="#">PariPlay</a>
+            <a class="providers__link button" href="#">PariPlay</a>
           </li>
           <li class="providers__item">
-            <a href="" class="providers__link button" href="#">BetConstruct</a>
+            <a class="providers__link button" href="#">BetConstruct</a>
           </li>
           <li class="providers__item">
-            <a href="" class="providers__link button" href="#">NetEnt</a>
+            <a class="providers__link button" href="#">NetEnt</a>
           </li>
         </ul>
       </div>
@@ -282,167 +287,674 @@
         <ul class="games__list">
           <li class="games__item">
             <a href="#">
-              <img src="img/games/game-cash-vandal.jpg" alt="cash-vandal">
+              <img src="img/games/game-cash-vandal.jpg" width="250" height="188" alt="cash-vandal">
             </a>
             <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
           </li>
           <li class="games__item">
             <a href="#">
-              <img src="img/games/game-monstermad.jpg" alt="monster madness">
+              <img src="img/games/game-monstermad.jpg" width="250" height="188" alt="monster madness">
             </a>
             <button class="games__button button" type="button" aria-label="play in monster madness">Play now</button>
           </li>
           <li class="games__item">
             <a href="#">
-              <img src="img/games/game-junglespirit.jpg" alt="jungle spirit">
+              <img src="img/games/game-junglespirit.jpg" width="250" height="188" alt="jungle spirit">
             </a>
             <button class="games__button button" type="button" aria-label="play in jungle spirit">Play now</button>
           </li>
           <li class="games__item">
             <a href="#">
-              <img src="img/games/game-fairyhansel.jpg" alt="fairy hansel">
+              <img src="img/games/game-fairyhansel.jpg" width="250" height="188" alt="fairy hansel">
             </a>
             <button class="games__button button" type="button" aria-label="play in fairy hansel">Play now</button>
           </li>
           <li class="games__item">
             <a href="#">
-              <img src="img/games/game-playboy.jpg" alt="playboy">
+              <img src="img/games/game-playboy.jpg" width="250" height="188" alt="playboy">
             </a>
             <button class="games__button button" type="button" aria-label="play in playboy">Play now</button>
           </li>
           <li class="games__item">
             <a href="#">
-              <img src="img/games/game-warlords.jpg" alt="warlords">
+              <img src="img/games/game-warlords.jpg" width="250" height="188" alt="warlords">
             </a>
             <button class="games__button button" type="button" aria-label="play in warlords">Play now</button>
           </li>
           <li class="games__item">
             <a href="#">
-              <img src="img/games/game-fairyred.jpg" alt="fairy red">
+              <img src="img/games/game-fairyred.jpg" width="250" height="188" alt="fairy red">
             </a>
             <button class="games__button button" type="button" aria-label="play in fairy red">Play now</button>
           </li>
           <li class="games__item">
             <a href="#">
-              <img src="img/games/game-copycats.jpg" alt="copy cats">
+              <img src="img/games/game-copycats.jpg" width="250" height="188" alt="copy cats">
             </a>
             <button class="games__button button" type="button" aria-label="play in copy cats">Play now</button>
           </li>
         </ul>
         <div class="games__item games__item--big">
           <a href="#">
-            <img src="img/games/game-zombie-horde.jpg" alt="zombie hoard">
+            <img src="img/games/game-zombie-horde.jpg" width="493" height="384" alt="zombie hoard">
           </a>
           <button class="games__button button" type="button" aria-label="play in zombie hoard">Play now</button>
         </div>
       </div>
-      <!-- <div class="games__wrapper">
-        <div class="games__list">
-          <a class="games__item" href="#">
-            <img src="img/game-cash-vandal.jpg" alt="cash vandal">
-            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
-          </a>
-          <a class="games__item" href="#">
-            <img src="img/game-monstermad.jpg" alt="monster madness">
-            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
-          </a>
-          <a class="games__item" href="#">
-            <img src="img/game-junglespirit.jpg" alt="jungle spirit">
-            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
-          </a>
-          <a class="games__item" href="#">
-            <img src="img/game-fairyhansel.jpg" alt="fairy hansel">
-            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
-          </a>
-          <a class="games__item" href="#">
-            <img src="img/game-playboy.jpg" alt="playboy">
-            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
-          </a>
-          <a class="games__item" href="#">
-            <img src="img/game-warlords.jpg" alt="warlords">
-            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
-          </a>
-          <a class="games__item" href="#">
-            <img src="img/game-fairyred.jpg" alt="fairy red">
-            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
-          </a>
-          <a class="games__item" href="#">
-            <img src="img/game-copycats.jpg" alt="copy cats">
-            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
-          </a>
-        </div>
-        <a class="games__item games__item--big" href="#">
-          <img src="img/game-zombie-horde.jpg" alt="zombie hoard">
-        </a>
-      </div> -->
     </section>
-    <section class="winning-now"></section>
+
+    <section class="winners">
+      <div class="winners__wrapper">
+        <h2 class="title">Winning now</h2>
+        <div class="winners__list">
+          <!-- Slider main container -->
+          <div class="swiper-container winners-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="winners__item">
+                  <div class="winners__img">
+                    <img src="img/games/game-jackhammer.jpg" width="250" height="188" alt="jack hammer">
+                  </div>
+                  <div class="winners__info">
+                    <span class="winners__name">Ivan-khopin</span>
+                    <a class="winners__game">100 Cats</a>
+                    <span class="winners__scoring">1020 P</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="winners__item">
+                  <div class="winners__img">
+                    <img src="img/games/game-eldorado.jpg" width="250" height="188" alt="jack hammer">
+                  </div>
+                  <div class="winners__info">
+                    <span class="winners__name">Ivan-khopin</span>
+                    <a class="winners__game">100 Cats</a>
+                    <span class="winners__scoring">1020 P</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="winners__item">
+                  <div class="winners__img">
+                    <img src="img/games/game-burglinbob.jpg" width="250" height="188" alt="jack hammer">
+                  </div>
+                  <div class="winners__info">
+                    <span class="winners__name">Ivan-khopin</span>
+                    <a class="winners__game">100 Cats</a>
+                    <span class="winners__scoring">1020 P</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="winners__item">
+                  <div class="winners__img">
+                    <img src="img/games/game-spacewars.jpg" width="250" height="188" alt="jack hammer">
+                  </div>
+                  <div class="winners__info">
+                    <span class="winners__name">Ivan-khopin</span>
+                    <a class="winners__game">100 Cats</a>
+                    <span class="winners__scoring">1020 P</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="winners__item">
+                  <div class="winners__img">
+                    <img src="img/games/game-pink_elephants.jpg" width="250" height="188" alt="jack hammer">
+                  </div>
+                  <div class="winners__info">
+                    <span class="winners__name">Ivan-khopin</span>
+                    <a class="winners__game">100 Cats</a>
+                    <span class="winners__scoring">1020 P</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="winners__item">
+                  <div class="winners__img">
+                    <img src="img/games/game-piggyriches.jpg" width="250" height="188" alt="jack hammer">
+                  </div>
+                  <div class="winners__info">
+                    <span class="winners__name">Ivan-khopin</span>
+                    <a class="winners__game">100 Cats</a>
+                    <span class="winners__scoring">1020 P</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="winners__item">
+                  <div class="winners__img">
+                    <img src="img/games/game-starburst.jpg" width="250" height="188" alt="jack hammer">
+                  </div>
+                  <div class="winners__info">
+                    <span class="winners__name">Ivan-khopin</span>
+                    <a class="winners__game">100 Cats</a>
+                    <span class="winners__scoring">1020 P</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="winners__item">
+                  <div class="winners__img">
+                    <img src="img/games/game-jackhammer.jpg" width="250" height="188" alt="jack hammer">
+                  </div>
+                  <div class="winners__info">
+                    <span class="winners__name">Ivan-khopin</span>
+                    <a class="winners__game">100 Cats</a>
+                    <span class="winners__scoring">1020 P</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="winners__item">
+                  <div class="winners__img">
+                    <img src="img/games/game-jackhammer.jpg" width="250" height="188" alt="jack hammer">
+                  </div>
+                  <div class="winners__info">
+                    <span class="winners__name">Ivan-khopin</span>
+                    <a class="winners__game">100 Cats</a>
+                    <span class="winners__scoring">1020 P</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="games games--popular">
       <h2 class="title">Popular</h2>
       <a class="view-all" href="#">View all (46)</a>
       <div class="games__wrapper">
+        <div class="games__item games__item--big flag flag--popular">
+          <a href="#">
+            <img src="img/games/game-thors_lightning.jpg" alt="thors lightning">
+          </a>
+          <button class="games__button button" type="button" aria-label="play in thors lightning">Play now</button>
+        </div>
         <ul class="games__list">
           <li class="games__item">
             <a href="#">
-              <img src="img/games/game-cash-vandal.jpg" alt="cash-vandal">
+              <img src="img/games/game-jackhammer.jpg" alt="jack hammer">
             </a>
-            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+            <button class="games__button button" type="button" aria-label="play in jack hammer">Play now</button>
           </li>
           <li class="games__item">
             <a href="#">
-              <img src="img/games/game-cash-vandal.jpg" alt="cash-vandal">
+              <img src="img/games/game-eldorado.jpg" alt="eldorado">
             </a>
-            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+            <button class="games__button button" type="button" aria-label="play in eldorado">Play now</button>
           </li>
           <li class="games__item">
             <a href="#">
-              <img src="img/games/game-cash-vandal.jpg" alt="cash-vandal">
+              <img src="img/games/game-burglinbob.jpg" alt="burglin bob">
             </a>
-            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+            <button class="games__button button" type="button" aria-label="play in burglin bob">Play now</button>
           </li>
           <li class="games__item">
             <a href="#">
-              <img src="img/games/game-cash-vandal.jpg" alt="cash-vandal">
+              <img src="img/games/game-goldfactory.jpg" alt="gold factory">
             </a>
-            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+            <button class="games__button button" type="button" aria-label="play in gold factory">Play now</button>
           </li>
           <li class="games__item">
             <a href="#">
-              <img src="img/games/game-cash-vandal.jpg" alt="cash-vandal">
+              <img src="img/games/game-spacewars.jpg" alt="space wars">
             </a>
-            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+            <button class="games__button button" type="button" aria-label="play in space wars">Play now</button>
           </li>
           <li class="games__item">
             <a href="#">
-              <img src="img/games/game-cash-vandal.jpg" alt="cash-vandal">
+              <img src="img/games/game-colossalpinatas.jpg" alt="colossal pinatas">
             </a>
-            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+            <button class="games__button button" type="button" aria-label="play in colossal pinatas">Play now</button>
           </li>
           <li class="games__item">
             <a href="#">
-              <img src="img/games/game-cash-vandal.jpg" alt="cash-vandal">
+              <img src="img/games/game-piggyriches.jpg" alt="piggy riches">
             </a>
-            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+            <button class="games__button button" type="button" aria-label="play in piggy riches">Play now</button>
           </li>
           <li class="games__item">
             <a href="#">
-              <img src="img/games/game-cash-vandal.jpg" alt="cash-vandal">
+              <img src="img/games/game-starburst.jpg" alt="starburst">
             </a>
-            <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+            <button class="games__button button" type="button" aria-label="play in starburst">Play now</button>
           </li>
         </ul>
-        <div class="games__item games__item--big">
+      </div>
+    </section>
+
+    <section class="games games--recommends">
+      <h2 class="title">Recommends games</h2>
+      <a class="view-all" href="#">View all (46)</a>
+      <div class="games__wrapper">
+        <ul class="games__list">
+          <li class="games__item flag flag--popular">
+            <a href="#">
+              <img src="img/games/game-jokerpro.jpg" alt="jokerpro">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in jokerpro">Play now</button>
+          </li>
+          <li class="games__item flag flag--new">
+            <a href="#">
+              <img src="img/games/game-kawaii_kitty.jpg" alt="kawaii kitty">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in kawaii kitty">Play now</button>
+          </li>
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-FruitVSCandy.jpg" alt="FruitVSCandy">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in FruitVSCandy">Play now</button>
+          </li>
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-hooks_heroes.jpg" alt="hook's heroes">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in hook's heroes">Play now</button>
+          </li>
+          <li class="games__item flag flag--new">
+            <a href="#">
+              <img src="img/games/game-JungleJim.jpg" alt="Jungle Jim">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in Jungle Jim">Play now</button>
+          </li>
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-classic243.jpg" alt="classic 243">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in classic 243">Play now</button>
+          </li>
+          <li class="games__item flag flag--popular">
+            <a href="#">
+              <img src="img/games/game-PrettyKitty.jpg" alt="Pretty Kitty">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in Pretty Kitty">Play now</button>
+          </li>
+          <li class="games__item">
+            <a href="#">
+              <img src="img/games/game-GameOfThronesWays.jpg" alt="Game Of Thrones">
+            </a>
+            <button class="games__button button" type="button" aria-label="play in Game Of Thrones">Play now</button>
+          </li>
+        </ul>
+        <div class="games__item games__item--big flag flag--recommends">
           <a href="#">
-            <img src="img/games/game-zombie-horde.jpg" alt="zombie hoard">
+            <img src="img/games/game-pink_elephants.jpg" alt="pink elephants">
           </a>
-          <button class="games__button button" type="button" aria-label="play in cash vandal">Play now</button>
+          <button class="games__button button" type="button" aria-label="play in pink elephants">Play now</button>
         </div>
       </div>
     </section>
+
+    <section class="results">
+      <div class="results__top_games top_games">
+        <h3 class="title">Game of month</h3>
+        <div class="top_games__info">
+          <p>
+            87% of players played the <a class="top_games__link" href="#">JUNGLE BOOKS</a> all month
+          </p>
+          <a class="top_games__button button" href="#">Start playing</a>
+        </div>
+      </div>
+      <div class="results__indicators indicators">
+        <div class="indicators__item indicators__item--players">
+          <span class="indicators__number">+100</span>
+          <p class="indicators__description">Players every day</p>
+        </div>
+        <div class="indicators__item indicators__item--providers">
+          <span class="indicators__number">30</span>
+          <p class="indicators__description">Providers</p>
+        </div>
+        <div class="indicators__item indicators__item--games">
+          <span class="indicators__number">+500</span>
+          <p class="indicators__description">of over games</p>
+        </div>
+      </div>
+      <div class="results__biggest_wins biggest_wins">
+        <h3 class="title">Biggest wins</h3>
+        <table class="biggest_wins__table">
+          <tr>
+            <th>Player</th>
+            <th>Game</th>
+            <th>Points</th>
+          </tr>
+          <tr>
+            <td>LussyLu</td>
+            <td><a class="biggest_wins__name">Gonzo Quest</a></td>
+            <td class="biggest_wins__score">3 200 &#8364;</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td><a class="biggest_wins__name">Jack Hammer</a></td>
+            <td class="biggest_wins__score">2 300 &#8364;</td>
+          </tr>
+          <tr>
+            <td>SunnyLunny</td>
+            <td><a class="biggest_wins__name">Gonzo Quest</a></td>
+            <td class="biggest_wins__score">1 500 &#8364;</td>
+          </tr>
+          <tr>
+            <td>LussyLu</td>
+            <td><a class="biggest_wins__name">Jack Hammer</a></td>
+            <td class="biggest_wins__score">1 200 &#8364;</td>
+          </tr>
+          <tr>
+            <td>SunnyLunny</td>
+            <td><a class="biggest_wins__name">Gonzo Quest</a></td>
+            <td class="biggest_wins__score">750 &#8364;</td>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td><a class="biggest_wins__name">Spinata Grande</a></td>
+            <td class="biggest_wins__score">1 150 &#8364;</td>
+          </tr>
+          <tr>
+            <td>SlotPirot12</td>
+            <td><a class="biggest_wins__name">Jack Hammer</a></td>
+            <td class="biggest_wins__score">3 200 &#8364;</td>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td><a class="biggest_wins__name">Spinata Grande</a></td>
+            <td class="biggest_wins__score">800 &#8364;</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <ul class="payment">
+      <li class="payment__item">
+        <a class="payment__link" href="#" aria-label="pay with neteller">
+          <svg aria-hidden="true" width="164" height="29">
+            <use xlink:href="#sprite-payment_neteller"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="payment__item">
+        <a class="payment__link" href="#" aria-label="pay with mastercard">
+          <svg aria-hidden="true" width="85" height="30">
+            <use xlink:href="#sprite-payment_skrill1"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="payment__item">
+        <a class="payment__link" href="#" aria-label="pay with cubits">
+          <svg aria-hidden="true" width="156" height="41">
+            <use xlink:href="#sprite-payment_cubits"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="payment__item">
+        <a class="payment__link" href="#" aria-label="pay with mastercard">
+          <svg aria-hidden="true" width="53" height="42">
+            <use xlink:href="#sprite-payment_mastercard"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="payment__item">
+        <a class="payment__link" href="#" aria-label="pay with visa">
+          <svg aria-hidden="true" width="103" height="34">
+            <use xlink:href="#sprite-payment_visa"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="payment__item">
+        <a class="payment__link" href="#" aria-label="pay with qiwi">
+          <svg aria-hidden="true" width="81" height="37">
+            <use xlink:href="#sprite-payment_qiwi"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="payment__item">
+        <a class="payment__link" href="#" aria-label="pay with yandex-money">
+          <svg aria-hidden="true" width="134" height="31">
+            <use xlink:href="#sprite-payment_ym"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </main>
 
-  <script src="js/vendor/swiper-bundle.min.js"></script>
+  <footer class="footer">
+    <ul class="partners">
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="bet365">
+          <svg aria-hidden="true" width="82" height="18">
+            <use xlink:href="#sprite-partner_365"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="yggdrasil">
+          <svg aria-hidden="true" width="91" height="18">
+            <use xlink:href="#sprite-partner_yggdrasil"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="microgaming">
+          <svg aria-hidden="true" width="77" height="17">
+            <use xlink:href="#sprite-partner_microgaming"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="evolution gaming">
+          <svg aria-hidden="true" width="129" height="14">
+            <use xlink:href="#sprite-partner_evolutiongaming"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="pariplay">
+          <svg aria-hidden="true" width="91" height="22">
+            <use xlink:href="#sprite-partner_pariplay"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="vivo gaming">
+          <svg aria-hidden="true" width="91" height="44">
+            <use xlink:href="#sprite-partner_vivogaming"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="playson">
+          <svg aria-hidden="true" width="91" height="18">
+            <use xlink:href="#sprite-partner_playson"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="pragmatic play">
+          <svg aria-hidden="true" width="92" height="36">
+            <use xlink:href="#sprite-partner_pragmaticplay"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="spotoption">
+          <svg aria-hidden="true" width="92" height="22">
+            <use xlink:href="#sprite-partner_spotoption"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="bet365">
+          <svg aria-hidden="true" width="82" height="18">
+            <use xlink:href="#sprite-partner_365"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="yggdrasil">
+          <svg aria-hidden="true" width="91" height="18">
+            <use xlink:href="#sprite-partner_yggdrasil"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="microgaming">
+          <svg aria-hidden="true" width="77" height="17">
+            <use xlink:href="#sprite-partner_microgaming"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="evolution gaming">
+          <svg aria-hidden="true" width="129" height="14">
+            <use xlink:href="#sprite-partner_evolutiongaming"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="pariplay">
+          <svg aria-hidden="true" width="91" height="22">
+            <use xlink:href="#sprite-partner_pariplay"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="vivo gaming">
+          <svg aria-hidden="true" width="91" height="44">
+            <use xlink:href="#sprite-partner_vivogaming"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="playson">
+          <svg aria-hidden="true" width="91" height="18">
+            <use xlink:href="#sprite-partner_playson"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="pragmatic play">
+          <svg aria-hidden="true" width="92" height="36">
+            <use xlink:href="#sprite-partner_pragmaticplay"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="spotoption">
+          <svg aria-hidden="true" width="92" height="22">
+            <use xlink:href="#sprite-partner_spotoption"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="pariplay">
+          <svg aria-hidden="true" width="91" height="22">
+            <use xlink:href="#sprite-partner_pariplay"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="partners__item">
+        <a class="partners__link" href="#" aria-label="vivo gaming">
+          <svg aria-hidden="true" width="91" height="44">
+            <use xlink:href="#sprite-partner_vivogaming"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <div class="footer__columns">
+      <div class="footer__graphic-info">
+        <span class="footer__logo logo">
+          <img src="img/logo.svg" width="169" height="40" alt="eGamings">
+        </span>
+        <img src="img/icons/icon-disklaimer.svg" width="54" height="55" alt="disklaimer">
+      </div>
+      <div class="footer__nav footer-nav">
+        <div class="footer-nav__column">
+          <h3 class="title">Navigation</h3>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Promotions</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Casino Live</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Casino</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Sportbook</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav__column">
+          <h3 class="title">Categories</h3>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">New games</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Popular</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Slots</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Casino live</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Other</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav__column">
+          <h3 class="title">License</h3>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Responsible Game</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Fair Play</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav__column">
+          <h3 class="title">Contacts</h3>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__info">
+        <h3 class="title">To test one’s luck, one don’t even need to leave his or her house</h3>
+        <p>
+          Today online casinos have ceased to be something unusual,
+          they are pretty much the same organizations as genuine gambling-houses,
+          and their activities are strictly controlled. The online casino WebbySlot
+          is being repeatedly tested for its honesty, and passes such tests successfully!
+        </p>
+      </div>
+    </div>
+    <div class="footer__copyright copyright">
+      <p>Deuscasino.com is operated by SG International N.V., which is registered in E-Commerce park, Vredenberg, Curacao, having gaming licence No.8048/JAZZ2015-035 and all rights to operate the gaming software. SG International LP is providing payment services as an agent according to the licence agreement concluded between SG International LP and SG International N.V.</p>
+      <p>&#169; Deus Casino. All rights reserved.</p>
+      <p>Developed by <a href="#">Softgamings</a></p>
+    </div>
+  </footer>
+
+  <div class="service-module">
+    <div class="service-module__wrapper">
+      <a class="service-module__link service-module__link--change-language" href="#" aria-label="change the language"></a>
+    </div>
+    <div class="service-module__wrapper">
+      <a class="service-module__link service-module__link--open-chat" href="#" aria-label="open a chat with an assistant"></a>
+    </div>
+  </div>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

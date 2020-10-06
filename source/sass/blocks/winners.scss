@@ -1,0 +1,95 @@
+.winners {
+  padding: 15px 0 24px;
+  background: $light-bg-color;
+  box-shadow: 0 0 14px transparentize($black-color, 0.75);
+}
+
+.winners__wrapper {
+  @include wrapper;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.winners__list {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  width: 84%; // для слайдера
+  max-height: 70px;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    z-index: 10;
+
+    width: 56px;
+    height: 70px;
+
+    background-color: $light-bg-color;
+    filter: blur(15px);
+  }
+
+  &::before {
+    left: -25px;
+  }
+
+  &::after {
+    right: -25px;
+  }
+}
+
+.winners__item {
+  display: flex;
+  align-items: center;
+
+  width: 184px; // для слайдера
+  height: 100%;
+  margin-right: 0; // для слайдера
+  margin-left: 0; // для слайдера
+}
+
+.winners__img {
+  margin-right: 10px;
+
+  width: 70px;
+  height: 70px;
+
+  border-radius: 100px;
+  overflow: hidden;
+
+  img {
+    height: 70px;
+    object-fit: cover;
+  }
+}
+
+.winners__info {
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.winners__game {
+  margin-bottom: 5px;
+  color: $accent-color;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.winners__scoring {
+  font-weight: bold;
+  font-size: 14px;
+}

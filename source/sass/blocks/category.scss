@@ -12,6 +12,7 @@
   @include reset-list;
 
   display: flex;
+  flex-wrap: wrap;
 }
 
 .category__item {

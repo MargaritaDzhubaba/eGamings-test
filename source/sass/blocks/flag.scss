@@ -1,0 +1,50 @@
+.flag {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 25px;
+    right: 0;
+
+    height: 30px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+
+    color: $text-color;
+    background-image: url("../img/flag.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover cover;
+  }
+
+  &:not(.games__item--big)::after {
+    top: 20px;
+
+    height: 20px;
+
+    line-height: 20px;
+  }
+
+  &--popular::after {
+    content: "Popular";
+
+    width: 80px;
+  }
+
+  &--new::after {
+    content: "New";
+
+    width: 48px;
+  }
+
+  &--recommends::after {
+    content: "Recommends";
+
+    width: 117px;
+  }
+}

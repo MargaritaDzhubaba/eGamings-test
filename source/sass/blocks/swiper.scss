@@ -12,7 +12,6 @@
 
   font: inherit;
 
-  // color: #a8a8a8;
   background: center no-repeat;
 
   border: none;
@@ -30,12 +29,12 @@
 
 .swiper-button-prev {
   left: 68px;
-  background-image: url("../img/icon-arrow-left.svg");
+  background-image: url("../img/icons/icon-arrow-left.svg");
 }
 
 .swiper-button-next {
   left: 109px;
-  background-image: url("../img/icon-arrow-right.svg");
+  background-image: url("../img/icons/icon-arrow-right.svg");
 }
 
 .swiper-pagination-bullet {

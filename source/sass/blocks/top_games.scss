@@ -1,0 +1,49 @@
+.top_games {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 38%;
+
+  p {
+    margin: 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+  }
+}
+
+.top_games__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 18px 80px;
+  height: 100%;
+
+  background-image: url("../img/games/junglebooks_1280x660.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.top_games__link {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: $text-color;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.top_games__button {
+  padding: 10px 20px;
+  margin-top: 10px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19px;
+}
+

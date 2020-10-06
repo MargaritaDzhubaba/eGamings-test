@@ -1,0 +1,23 @@
+.payment {
+  @include reset-list;
+  @include wrapper;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.payment__item + .payment__item {
+  margin-left: 35px;
+}
+
+.payment__item:hover,
+.payment__item:focus {
+  @include transition;
+
+  transform: scale(1.2);
+}

@@ -1,0 +1,48 @@
+.biggest_wins {
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+}
+
+.biggest_wins__table {
+  font-family: inherit;
+  width: 100%;
+  border-collapse: collapse;
+
+  background-color: $light-bg-color;
+}
+
+td, th {
+  padding: 13px;
+
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 15px;
+}
+
+th {
+  font-weight: 500;
+  color: $text-secondary-color;
+}
+
+tr:nth-child(2) {
+  background: linear-gradient(180deg, rgba(10, 17, 37, 0.5) 0%, rgba(26, 33, 51, 0) 23.58%);
+}
+
+tr:nth-child(even) {
+  background-color: $table-color;
+}
+
+.biggest_wins__name {
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.biggest_wins__score {
+  font-weight: bold;
+}
