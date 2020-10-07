@@ -48,6 +48,12 @@
   }
 }
 
+input[type=search]{
+  -moz-appearance: none;/* older firefox */
+  -webkit-appearance: none; /* safari, chrome, edge and ie mobile */
+  appearance: none; /* rest */
+}
+
 .form-search__input {
   display: none;
   margin: 0;
@@ -59,7 +65,7 @@
   font-weight: 400;
 
   color: $text-color;
-  background-color: transparent;
+  // background-color: transparent;
   border: none;
   box-shadow: none;
 

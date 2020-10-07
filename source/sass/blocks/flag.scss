@@ -19,7 +19,7 @@
     background-image: url("../img/flag.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    background-size: cover cover;
+    background-size: cover;
   }
 
   &:not(.games__item--big)::after {
