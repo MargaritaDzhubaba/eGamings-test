@@ -8,17 +8,18 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
 
-  &::before {
-    content: "";
+@media (max-width: $tablet-width-only) {
+  .promo {
+    flex-direction: column-reverse;
 
-    position: absolute;
-    top: -83px;
-    left: -83px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
 
-    width: 204px;
-    height: 198px;
-
-    background: transparent url("../img/cristals.png") no-repeat 0 0;
+    &::before {
+      content: none;
+    }
   }
 }

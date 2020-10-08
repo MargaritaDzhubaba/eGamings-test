@@ -9,19 +9,6 @@
 
   font-family: $default-font;
 
-  &::after {
-    content: "";
-
-    position: absolute;
-    bottom: -30px;
-    right: -110px;
-
-    width: 218px;
-    height: 210px;
-
-    background: transparent url("../img/cristals-01.png") no-repeat 0 0;
-  }
-
   input,
   select {
     margin-bottom: 13px;
@@ -152,5 +139,24 @@ select {
     @include transition;
 
     opacity: 0.5;
+  }
+}
+
+@media (max-width: 1070px) {
+  .form-register__label {
+    &--password {
+      // margin-right: auto;
+      width: 100%;
+    }
+
+    &--promocode {
+      margin-right: 0;
+      width: 49%;
+    }
+  }
+
+  .form-register__select {
+    width: 40%;
+    margin-right: auto;
   }
 }

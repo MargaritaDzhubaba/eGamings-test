@@ -46,3 +46,15 @@ tr:nth-child(even) {
 .biggest_wins__score {
   font-weight: bold;
 }
+
+@media (max-width: $tablet-width-only) {
+  .biggest_wins {
+    width: 60%;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .biggest_wins {
+    width: 100%;
+  }
+}

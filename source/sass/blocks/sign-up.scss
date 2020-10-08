@@ -1,0 +1,122 @@
+.sign-up {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  max-width: 322px;
+
+  margin-left: 13px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -140px;
+    left: -150px;
+
+    width: 204px;
+    height: 198px;
+
+    background: transparent url("../img/cristals.png") no-repeat 0 0;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: -30px;
+    left: 230px;
+
+    width: 218px;
+    height: 210px;
+
+    background: transparent url("../img/cristals-01.png") no-repeat 0 0;
+  }
+
+  h2 {
+    margin-bottom: 13px;
+
+    text-align: center;
+  }
+
+  span {
+    margin-bottom: 10px;
+
+    font-family: $default-font;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: $text-secondary-color;
+  }
+}
+
+@media (max-width: 1070px) {
+  .sign-up {
+    max-width: 300px;
+  }
+}
+
+.sign-up__social-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.sign-up__social-title {
+  margin-bottom: 11px;
+
+  font-family: $default-font;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: $text-secondary-color;
+}
+
+.sign-up__social-description {
+  margin: 0;
+  display: flex;
+}
+
+.sign-up__social-link:hover,
+.sign-up__social-link:focus {
+  @include transition;
+
+  transform: scale(1.2);
+}
+
+.sign-up__social-link + .sign-up__social-link {
+  margin-left: 15px;
+}
+
+@media (max-width: $tablet-width-only) {
+  .sign-up {
+    margin-left: 0;
+
+    &::before {
+      top: -100px;
+      left: -160px;
+    }
+
+    &::after {
+      left: 270px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .sign-up {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .sign-up::after {
+    content: none;
+  }
+}

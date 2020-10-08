@@ -8,7 +8,11 @@
   justify-content: center;
 
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
+}
+
+.payment__item {
+  margin-bottom: 15px;
 }
 
 .payment__item + .payment__item {
@@ -20,4 +24,20 @@
   @include transition;
 
   transform: scale(1.2);
+}
+
+// @media (max-width: $tablet-width-only) {
+// }
+
+@media (max-width: $mobile-width-only) {
+  .payment {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    justify-content: space-between;
+  }
+
+  .payment__item + .payment__item {
+    margin-left: 0;
+  }
 }

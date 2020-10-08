@@ -83,3 +83,18 @@ input[type=search]{
   background: transparent url("../img/icons/icon-search.svg") no-repeat 0 center;
   border: 0;
 }
+
+@media (max-width: $tablet-width-only) {
+  .form-search {
+    &:hover,
+    &:focus {
+      width: 250px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .form-search--category {
+    width: 100%;
+  }
+}

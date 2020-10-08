@@ -17,8 +17,6 @@
   align-items: center;
   text-align: center;
 
-
-
   &:first-child {
     margin-left: 0;
   }
@@ -46,6 +44,24 @@
       width: 11px;
       height: 13px;
       background-image: url("../img/icons/icon-user.svg");
+    }
+  }
+}
+
+@media (max-width: $tablet-width-only) {
+  .user-nav__button {
+    margin-left: 13px;
+    padding: 6px 25px;
+
+    font-size: 14px;
+    line-height: 15px;
+
+    &--login {
+      padding-left: 35px;
+
+      span::before {
+        top: 1px;
+      }
     }
   }
 }

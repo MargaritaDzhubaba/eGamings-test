@@ -93,3 +93,37 @@
   font-weight: bold;
   font-size: 14px;
 }
+
+@media (max-width: $mobile-width-only) {
+  .winners__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    h2 {
+      margin-bottom: 15px;
+    }
+  }
+
+  .winners__list {
+    width: 100%;
+
+    &::before {
+      left: -14px;
+    }
+
+    &::after {
+      right: -14px;
+    }
+  }
+
+  .winners__img {
+    width: 55px;
+    height: 55px;
+
+    img {
+      height: 55px;
+    }
+  }
+}

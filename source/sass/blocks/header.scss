@@ -1,7 +1,7 @@
 .header {
   z-index: 5;
   background-color: $dark-bg-color;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px transparentize($black-color, 0.95);
 }
 
 .header__wrapper {
@@ -12,7 +12,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  &--mobile {
+    display: none;
+  }
 }
 
 .header__form {
@@ -21,4 +26,116 @@
 
 .header__nav {
   padding-left: 64px;
+}
+
+@media (max-width: $tablet-width-only) {
+  .header__wrapper {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .header__form {
+    left: 25px;
+  }
+
+  .header__nav {
+    padding-left: 35px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .header__wrapper {
+    display: none;
+
+    &--mobile {
+      display: flex;
+    }
+  }
+
+  .header__toggle {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+
+    display: block;
+    width: 24px;
+    height: 15px;
+
+    background-color: #fff;
+    background: url("../img/icons/icon-menu-burger.svg") no-repeat center center;
+
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .header__wrapper {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    padding: 20px 15px;
+
+    color: $accent-color;
+
+    &--close {
+      .header__nav {
+        display: none;
+      }
+    }
+
+    &--no-js {
+      background-color: $dark-bg-color;
+
+      .header__nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        padding-left: 15px;
+      }
+
+      .header__toggle {
+        display: none;
+      }
+
+      .header__logo {
+        margin-bottom: 25px;
+      }
+    }
+
+    &--open {
+      width: 100%;
+      padding: 20px 15px;
+      background-color: $dark-bg-color;
+
+      .header__toggle {
+        top: 35px;
+        right: 15px;
+
+        background: url("../img/icons/icon-menu-close.svg") no-repeat center center;
+      }
+    }
+  }
+
+  .header__nav {
+    margin: 0;
+  }
+
+  .header__logo {
+    height: 30px;
+
+    img {
+      height: 30px;
+    }
+  }
 }

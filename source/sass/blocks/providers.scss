@@ -1,7 +1,7 @@
 .providers {
   @include wrapper;
 
-  padding: 16px 0;
+  padding: 16px 0 10px;
 }
 
 .providers__list {
@@ -9,12 +9,13 @@
 
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  padding: 0 16px;
 }
 
 .providers__item {
   margin-right: 20px;
+  margin-bottom: 6px;
 
   &:last-child {
     margin-right: 0;
@@ -41,5 +42,26 @@
   &:focus {
     border-color: $accent-color;
     box-shadow: none;
+  }
+}
+
+@media (max-width: $tablet-width-only) {
+  .providers__list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .providers {
+    padding: 16px 15px;
+  }
+
+  .providers__item:nth-child(n+6) {
+    display: none;
+  }
+
+  .providers__item {
+    margin-right: 5px;
   }
 }

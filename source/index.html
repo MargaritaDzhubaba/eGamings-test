@@ -45,44 +45,78 @@
         </a>
       </div>
     </div>
+
+    <!-- мобильное меню -->
+    <div class="header__wrapper header__wrapper--mobile header__wrapper--close header__wrapper--no-js">
+      <form class="header__form form-search" action="#" method="GET">
+        <input class="form-search__input" type="search" placeholder="thor's lightning">
+        <button class="form-search__button" type="button" aria-label="site search"></button>
+      </form>
+      <span class="header__logo logo">
+        <img src="img/logo.svg" width="169" height="40" alt="eGamings">
+      </span>
+      <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
+      <nav class="header__nav nav nav--no-js">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#">Casino</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Shop</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Promotions</a>
+          </li>
+        </ul>
+
+        <ul class="nav__list nav__list--user-nav">
+          <li class="nav__item">
+            <a href="#">Deposit</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Log In</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
     <div class="promo">
-      <section class="sing-up">
+      <section class="sign-up">
         <h2 class="title">Sign up and start winning</h2>
-        <dl class="sing-up__social-list">
-          <dt class="sing-up__social-title">With your social network</dt>
-          <dd class="sing-up__social-description">
-            <a class="sing-up__social-link" href="#" aria-label="Мейлру">
-              <svg class="sing-up__social-icon" aria-hidden="true" width="33" height="33">
+        <dl class="sign-up__social-list">
+          <dt class="sign-up__social-title">With your social network</dt>
+          <dd class="sign-up__social-description">
+            <a class="sign-up__social-link" href="#" aria-label="Мейлру">
+              <svg class="sign-up__social-icon" aria-hidden="true" width="33" height="33">
                 <use xlink:href="#sprite-icon-mail"></use>
               </svg>
             </a>
-            <a class="sing-up__social-link" href="#" aria-label="Одноклассники">
-              <svg class="sing-up__social-icon" aria-hidden="true" width="34" height="33">
+            <a class="sign-up__social-link" href="#" aria-label="Одноклассники">
+              <svg class="sign-up__social-icon" aria-hidden="true" width="34" height="33">
                 <use xlink:href="#sprite-icon-ok"></use>
               </svg>
             </a>
-            <a class="sing-up__social-link" href="#" aria-label="Фейсбук">
-              <svg class="sing-up__social-icon" aria-hidden="true" width="33" height="33">
+            <a class="sign-up__social-link" href="#" aria-label="Фейсбук">
+              <svg class="sign-up__social-icon" aria-hidden="true" width="33" height="33">
                 <use xlink:href="#sprite-icon-fb"></use>
               </svg>
             </a>
-            <a class="sing-up__social-link" href="#" aria-label="ВКонтакте">
-              <svg class="sing-up__social-icon" aria-hidden="true" width="35" height="34">
+            <a class="sign-up__social-link" href="#" aria-label="ВКонтакте">
+              <svg class="sign-up__social-icon" aria-hidden="true" width="35" height="34">
                 <use xlink:href="#sprite-icon-vk"></use>
               </svg>
             </a>
-            <a class="sing-up__social-link" href="#" aria-label="Гугл Плюс">
-              <svg class="sing-up__social-icon" aria-hidden="true" width="33" height="33">
+            <a class="sign-up__social-link" href="#" aria-label="Гугл Плюс">
+              <svg class="sign-up__social-icon" aria-hidden="true" width="33" height="33">
                 <use xlink:href="#sprite-icon-google-plus"></use>
               </svg>
             </a>
           </dd>
         </dl>
         <span>or</span>
-        <form class="sing-up__form form-register" action="#" method="POST">
+        <form class="sign-up__form form-register" action="#" method="POST">
           <label class="form-register__label form-register__label--email">
             <input type="email" name="email-field" placeholder="E-mail *" required>
           </label>
@@ -281,8 +315,10 @@
     </section>
 
     <section class="games games--new">
-      <h2 class="title">New games</h2>
-      <a class="view-all" href="#">View all (46)</a>
+      <div class="games__info">
+        <h2 class="title">New games</h2>
+        <a class="games__view-all" href="#">View all (46)</a>
+      </div>
       <div class="games__wrapper">
         <ul class="games__list">
           <li class="games__item">
@@ -336,7 +372,7 @@
         </ul>
         <div class="games__item games__item--big">
           <a href="#">
-            <img src="img/games/game-zombie-horde.jpg" srcset="img/games/game-zombie-horde@2x.jpg 2x" width="493" height="384" alt="zombie hoard">
+            <img src="img/games/game-zombie-horde.jpg" srcset="img/games/game-zombie-horde@2x.jpg 2x" width="496" height="383" alt="zombie hoard">
           </a>
           <button class="games__button button" type="button" aria-label="play in zombie hoard">Play now</button>
         </div>
@@ -467,12 +503,14 @@
     </section>
 
     <section class="games games--popular">
-      <h2 class="title">Popular</h2>
-      <a class="view-all" href="#">View all (46)</a>
+      <div class="games__info">
+        <h2 class="title">Popular</h2>
+        <a class="games__view-all" href="#">View all (46)</a>
+      </div>
       <div class="games__wrapper">
         <div class="games__item games__item--big flag flag--popular">
           <a href="#">
-            <img src="img/games/game-thors_lightning.jpg" srcset="img/games/game-thors_lightning@2x.jpg 2x" alt="thors lightning">
+            <img src="img/games/game-thors_lightning.jpg" srcset="img/games/game-thors_lightning@2x.jpg 2x" width="496" height="383" alt="thors lightning">
           </a>
           <button class="games__button button" type="button" aria-label="play in thors lightning">Play now</button>
         </div>
@@ -530,8 +568,10 @@
     </section>
 
     <section class="games games--recommends">
-      <h2 class="title">Recommends games</h2>
-      <a class="view-all" href="#">View all (46)</a>
+      <div class="games__info">
+        <h2 class="title">Recommends games</h2>
+        <a class="games__view-all" href="#">View all (46)</a>
+      </div>
       <div class="games__wrapper">
         <ul class="games__list">
           <li class="games__item flag flag--popular">
@@ -585,7 +625,7 @@
         </ul>
         <div class="games__item games__item--big flag flag--recommends">
           <a href="#">
-            <img src="img/games/game-pink_elephants.jpg" srcset="img/games/game-pink_elephants@2x.jpg 2x" alt="pink elephants">
+            <img src="img/games/game-pink_elephants.jpg" srcset="img/games/game-pink_elephants@2x.jpg 2x" width="496" height="383" alt="pink elephants">
           </a>
           <button class="games__button button" type="button" aria-label="play in pink elephants">Play now</button>
         </div>
@@ -872,9 +912,12 @@
         <img src="img/icons/icon-disklaimer.svg" width="54" height="55" alt="disklaimer">
       </div>
       <div class="footer__nav footer-nav">
-        <div class="footer-nav__column">
-          <h3 class="title">Navigation</h3>
-          <ul class="footer-nav__list">
+        <div class="footer-nav__column footer-nav__accordion">
+          <div class="footer-nav__title footer-nav__accordion-open-block">
+            <h3 class="title">Navigation</h3>
+            <div class="footer-nav__button-accordion footer-nav__button-accordion--nojs"></div>
+          </div>
+          <ul class="footer-nav__list footer-nav__accordion-list footer-nav__accordion-list--nojs">
             <li class="footer-nav__item">
               <a class="footer-nav__link" href="#">Promotions</a>
             </li>
@@ -889,9 +932,12 @@
             </li>
           </ul>
         </div>
-        <div class="footer-nav__column">
-          <h3 class="title">Categories</h3>
-          <ul class="footer-nav__list">
+        <div class="footer-nav__column footer-nav__accordion">
+          <div class="footer-nav__title footer-nav__accordion-open-block">
+            <h3 class="title">Categories</h3>
+            <div class="footer-nav__button-accordion footer-nav__button-accordion--nojs"></div>
+          </div>
+          <ul class="footer-nav__list footer-nav__accordion-list footer-nav__accordion-list--nojs">
             <li class="footer-nav__item">
               <a class="footer-nav__link" href="#">New games</a>
             </li>
@@ -909,9 +955,12 @@
             </li>
           </ul>
         </div>
-        <div class="footer-nav__column">
-          <h3 class="title">License</h3>
-          <ul class="footer-nav__list">
+        <div class="footer-nav__column footer-nav__accordion">
+          <div class="footer-nav__title footer-nav__accordion-open-block">
+            <h3 class="title">License</h3>
+            <div class="footer-nav__button-accordion footer-nav__button-accordion--nojs"></div>
+          </div>
+          <ul class="footer-nav__list footer-nav__accordion-list footer-nav__accordion-list--nojs">
             <li class="footer-nav__item">
               <a class="footer-nav__link" href="#">Responsible Game</a>
             </li>
@@ -920,13 +969,18 @@
             </li>
           </ul>
         </div>
-        <div class="footer-nav__column">
-          <h3 class="title">Contacts</h3>
-          <ul class="footer-nav__list">
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Contact</a>
-            </li>
-          </ul>
+        <div class="footer-nav__column footer-nav__accordion">
+          <div class="footer-nav__title footer-nav__accordion-open-block">
+            <h3 class="title">Contacts</h3>
+            <div class="footer-nav__button-accordion footer-nav__button-accordion--nojs"></div>
+          </div>
+          <div class="footer-nav__nav-wrapper footer-nav__accordion-list footer-nav__accordion-list--nojs">
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="footer__info">

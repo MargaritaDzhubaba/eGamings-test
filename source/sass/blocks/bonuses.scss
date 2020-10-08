@@ -95,3 +95,30 @@
   background-color: $accent-color;
   border-color: $accent-color;
 }
+
+@media (max-width: $tablet-width-only) {
+  .bonuses {
+    width: 100%;
+
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: $tablet-width-only) {
+  .bonuses {
+    width: 100%;
+
+    margin-bottom: 20px;
+  }
+
+  .bonuses__item {
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .bonuses__info {
+    max-width: 300px;
+    padding-left: 16px;
+  }
+}
