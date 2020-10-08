@@ -30,12 +30,12 @@
   line-height: 15px;
 
   color: $text-secondary-color;
-  border-color:#282F4B;
+  border-color: #282f4b;
   border-radius: 50px;
 
   &--active {
     color: $text-color;
-    border: 1px solid #D73649;
+    border: 1px solid #d73649;
   }
 
   &:hover,

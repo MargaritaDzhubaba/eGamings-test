@@ -44,7 +44,7 @@ var sliderWinners = new Swiper('.winners-slider', {
   }
 });
 
-//Открыть меню
+// Открыть меню
 var ESC_KEY = 'Escape';
 var ENTER_KEY = 'Enter';
 
@@ -102,7 +102,7 @@ var accordionsButton = document.querySelectorAll('.footer-nav__button-accordion'
 var accordionsList = document.querySelectorAll('.footer-nav__accordion-list');
 var accordionsOpen = document.querySelectorAll('.footer-nav__accordion-open-block');
 
-if(accordions) {
+if (accordions) {
   accordions.forEach(function (accordion) {
     var button = accordion.querySelector('.footer-nav__button-accordion');
     var list = accordion.querySelector('.footer-nav__accordion-list');
